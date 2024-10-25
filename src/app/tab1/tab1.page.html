@@ -15,14 +15,19 @@
 
   <ion-grid>
     <ion-row>
-      <ion-card>
-        <ion-item>
-          <ion-avatar style="height: 100px; width: 100px;">
-            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-          </ion-avatar>
-          <ion-label style="font-size: 20px;">Autor</ion-label>
-        </ion-item>
-      </ion-card>
+      <ion-col>
+        <ion-card>
+          <ion-item>
+            <ion-avatar slot="start" style="height: 100px; width: 100px;">
+              <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            </ion-avatar>
+            <ion-label style="font-size: 20px;">Lenin Cristóbal Gómez Gualotuña</ion-label>
+          </ion-item>
+          <ion-card-content>
+            Estudiante actualmente estudiando la carrera Tecnología Superior en Desarrollo de Software en la Escuela Politécnica Nacional.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
     </ion-row>
   </ion-grid>
   <ion-grid>
@@ -31,12 +36,15 @@
         <div>
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              <ion-card-title>Sobre Mí</ion-card-title>
             </ion-card-header>
-
             <ion-card-content>
-              Here's a small text description for the card content. Nothing more, nothing less.
+              <ion-list>
+                <ul>
+                  <li>Fecha de Nacimiento: 20/Abril/2003</li>
+                  <li>Lugar de Nacimiento: Quito</li>
+                </ul>
+              </ion-list>
             </ion-card-content>
           </ion-card>
         </div>
@@ -45,12 +53,13 @@
         <div>
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              <ion-card-title>Idiomas</ion-card-title>
             </ion-card-header>
-
             <ion-card-content>
-              Here's a small text description for the card content. Nothing more, nothing less.
+              <ul>
+                <li>Español: Nativo</li>
+                <li>Inglés: B1</li>
+              </ul>
             </ion-card-content>
           </ion-card>
         </div>
@@ -58,4 +67,30 @@
     </ion-row>
   </ion-grid>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Hobbies</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+                <ul>
+                  <li>
+                    Jugar Videojuegos
+                  </li>
+                  <li>
+                    Cocinar
+                  </li>
+                  <li>
+                    Jugar Fútbol
+                  </li>
+                </ul>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
