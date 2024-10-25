@@ -13,5 +13,19 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <form id="new-form">
+    <ion-item id="new-input2">
+      <ion-label stacked>
+        Fecha inicial
+      </ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" placeholder="" name="fechaini" [ngModel]="fechaini"></ion-datetime>
+    </ion-item>
+    <ion-item id="new-input3">
+      <ion-label stacked>
+        Fecha final
+      </ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" placeholder="" name="fechafin" [(ngModel)]="fechafin" ></ion-datetime>
+    </ion-item>
+  </form>
+  <ion-button id="button1" ion-button block color="dark" (click)="calcular()">Calcular</ion-button>
 </ion-content>
