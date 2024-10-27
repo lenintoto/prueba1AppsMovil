@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 4
+      Ecuación Cuadrática
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,6 +12,33 @@
       <ion-title size="large">Tab 4</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-card>
+    <img alt="Ecuacián Cuadrática" src="../../assets/image/ecuacionCuadratica.jpg" />
+    <ion-card-header>
+      <ion-card-title>Calculo de la ecuación cuadrática</ion-card-title>
+      <ion-card-subtitle>Teniendo en cuenta la imágen, proporciona los coeficientes para realizar la ecuación.</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-input label="Coeficiente A" labelPlacement="floating" [(ngModel)]="A" placeholder="Ingrese el coeficiente A"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Coeficiente B" labelPlacement="floating" [(ngModel)]="B" placeholder="Ingrese el coeficiente B"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Coeficiente C" labelPlacement="floating" [(ngModel)]="C" placeholder="Ingrese el coeficiente C"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>X1: {{ X1 }}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>X2: {{ X2 }}</ion-label>
+        </ion-item>
+        <ion-button expand="block" (click)="calcularEcuacionCuadratica()">Calcular</ion-button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 
-  <app-explore-container name="Tab 4 page"></app-explore-container>
 </ion-content>
