@@ -10,12 +10,20 @@ import * as moment from 'moment';
 export class Tab3Page {
   fechaini?: string;
   fechafin?: string;
+  diff?: number;
+
   constructor(public navCtrl: NavController) {
   }
-  calcular(){
-    var ini = moment(this.fechaini);
-    var fin = moment(this.fechafin);
-    var diff = fin.diff(ini,'days');
-    console.log(diff)
+  
+  calcular() {
+    if (this.fechaini && this.fechafin) {
+      const ini = moment(this.fechaini, 'YYYY-MM-DD');
+      const fin = moment(this.fechafin, 'YYYY-MM-DD');
+
+      this.diff = fin.diff(ini, 'days');
+      console.log(`Diferencia en días: ${this.diff}`);
+    } else {
+      console.error('Por favor selecciona ambas fechas.');
+    }
   }
 }
