@@ -15,3 +15,7 @@
 ## Página 4 (Cálculo de ecuación cuadrática)
   -En esta página, se encontrará una "calculadora" de la ecuación cuadrática y que podremos visualizar el resultado de las 2 variables
 ![image](https://github.com/user-attachments/assets/174bc819-5de7-4b58-b24c-4332eb2880aa)
+
+## Página 5 (Ingresar un texto y guardarlo)
+  -En esta página, se ingresará un texto y se guardará aparte mostrando el texto 
+![image](https://github.com/user-attachments/assets/460c570b-413b-4067-8481-c5e21905ed02)
